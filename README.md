@@ -5,7 +5,7 @@ Get information about [Flask]
 
 Installation
 =======
-- Install dependencies: ```pip install requirements.txt```
+- Install dependencies: ```pip install -r requirements.txt```
 - Run: ```python main.py```
 - Enter: ```http://localhost:5000/api/v1```
 - To work!
