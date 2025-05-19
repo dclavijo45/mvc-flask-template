@@ -1,4 +1,4 @@
-from exceptions.controled_exception import HttpControlledException
+from exceptions.controlled_exception import HttpControlledException
 from database.repository.user_repository import UserRepository
 from database.schemas.user_schema import UserSchema
 from marshmallow.exceptions import ValidationError

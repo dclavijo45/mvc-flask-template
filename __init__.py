@@ -1,5 +1,5 @@
 from config import SECRET_KEY, MYSQL_USER, MYSQL_PASSWORD, MYSQL_HOST, MYSQL_PORT, MYSQL_DB
-from exceptions.controled_exception import HttpControlledException
+from exceptions.controlled_exception import HttpControlledException
 from types_dict.http import HttpGlobalResponse
 from flask import Flask, jsonify
 from flask_cors import CORS
