@@ -1,15 +1,19 @@
 from dotenv import load_dotenv, find_dotenv
 from os import getenv as env
-load_dotenv(find_dotenv())
-import random
-import string
+from uuid import uuid4
 
 #App
-SECRET_KEY = ''.join(random.
-    choice(f"{string.ascii_uppercase}{string.punctuation}{string.ascii_letters}") 
-    for i in range(20))
+load_dotenv(find_dotenv())
 
+SECRET_KEY = f"{uuid4().hex}-{uuid4().hex}"
 DEBUG = int(env('DEBUG', '1'))
+
+#MySQL
+MYSQL_HOST = env('MYSQL_HOST', 'localhost')
+MYSQL_PORT = env('MYSQL_PORT', 3306)
+MYSQL_USER = env('MYSQL_USER', 'root')
+MYSQL_PASSWORD = env('MYSQL_PASSWORD', '')
+MYSQL_DB = env('MYSQL_DB', 'test')
 
 #Server
 PORT = int(env('PORT', 5000))
